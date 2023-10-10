@@ -1,0 +1,176 @@
+\documentclass[12pt, a4paper]{extarticle} %tamanho da fonte 12pts, papel A4 e duas coluna (twocolumn).
+\usepackage[brazil]{babel} %traduz o documento para o português do Brasil.
+\usepackage[utf8]{inputenc} %pacote reconhece acentuação em português
+\usepackage[left=3cm,top=2cm,right=1.5cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{gensymb}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[]{algorithm2e}
+\usepackage{minted}
+\usepackage{textcomp,gensymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{gensymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{textcomp,gensymb}
+\usepackage{listings}
+\usepackage{verbatim} %Pacote permite o uso de grandes caixas de comentário
+
+
+
+
+
+%%%%%%% CORPO DO TRABALHO  %%%%%%%
+\begin{document}
+
+\begin{titlepage}
+	
+    
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=0.9]{Figuras/logouneb.png}
+	\label{logouneb}
+\end{figure}
+\begin{center} 
+	\textbf{UNIVERSIDADE DO ESTADO DA BAHIA - UNEB\\
+		DEPARTAMENTO DE CIÊNCIAS EXATAS E DA TERRA\\
+            COLEGIADO DE ENGENHARIA DE PRODUÇÃO CIVIL
+		I}\\\vspace{6cm}
+	\textbf{INFRAESTRUTURA ECONÔMICA  DO BRASIL }\\\vspace{4cm} %especificar melhor o título
+    
+\hfill
+
+		\textbf{} Andreza Pereira e Jonas G Santos\\
+		
+		\vspace{7cm}
+		
+	Salvador, BA\\
+	Set, 2023
+\end{center}
+\end{titlepage}
+
+\begin{comment}
+\newpage %Leva a introdução para uma nova página
+
+\tableofcontents
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+\end{comment}
+\newpage
+\begin{center} 
+	\textbf{Universidade do Estado da Bahia\\
+		Departamento de Ciências Exatas e da Terra\\
+            Colegiado de Engenharia de Produção Civil
+		I}\\\vspace{6cm}
+	\textbf{INFRAESTRUTURA ECONÔMICA  DO BRASIL }\\\vspace{2cm} %especificar melhor o título
+    
+\hfill
+\begin{center}
+    Andreza Pereira e Jonas G Santos
+\end{center}
+
+\vspace{2cm}
+\begin{flushright}
+    \begin{minipage}{8cm}
+Trabalho apresentado a UNEB na disciplina Computação aplicada para a obtenção de nota.\\ {Orientador:} Prof° Dr° Robson Marinho
+\end{minipage}
+\end{flushright}
+		\vspace{9cm}
+		
+
+	Salvador, BA\\
+	Set, 2023
+\end{center}
+
+\newpage
+\section{Introdução}
+
+ A infraestrutura segundo o dicionário é sistema básico que corresponde aos serviços públicos de um município: a coleta de lixo diz respeito à infraestrutura de uma cidade, suporte invisível que sustenta um prédio, entre diversos outros significados que não cabe dizer aqui. Já a infraestrutura econômica compreende todos os sistemas, estruturas e instalações fundamentais que sustentam as atividades econômicas em uma região. Isso inclui redes de transporte, como estradas e ferrovias, bem como portos e aeroportos para facilitar o movimento de pessoas e mercadorias. Além disso, abrange sistemas de energia, como eletricidade e fontes de energia, como petróleo e gás, que alimentam as indústrias e as residências. As telecomunicações desempenham um papel importante, com redes de comunicação, como fibra ótica e telefonia móvel, permitindo a transmissão de informações. Outros componentes vitais são o abastecimento de água e o saneamento, que garantem condições de vida saudáveis, bem como instituições educacionais, laboratórios de pesquisa e serviços de saúde para apoiar o desenvolvimento econômico por meio do conhecimento e da força de trabalho saudável. Além disso, várias outras infraestruturas, como pontes, barragens e instalações de tratamento de resíduos, também desempenham um papel crucial na sustentação das atividades econômicas e no crescimento da região. Essa infraestrutura é essencial para atrair investimentos, promover a competitividade e melhorar a qualidade de vida das pessoas em uma área.
+ Infraestrutura é um meio essencial para qualquer nação, é nela que são feitos trabalhos de transportes, sejam eles, hidroviário, rodoviário, ferroviário, Aéreo, telecomunicações ou outros. Ela desempenha um papel fundamental no desenvolvimento de qualquer nação, e o Brasil não é exceção. Com uma  vasta extensão geográfica, economia diversificada e uma população de mais de 200 milhões de habitantes, o Brasil enfrenta desafios complexos e variados relacionados à infraestrutura. 
+ O Brasil usa majoritariamente a infraestrutura marítima para o transporte de commodities para o mercado internacional, e para o mercado interno usa quase que por completo rodovias cujas situações estão em péssimos estado além das ferrovias. Rodovias são o principal meio de transporte no Brasil, hoje em dia a condição das estradas brasileiras estão se deteriorando a cada dia, dos 1,72 milhão de quilômetros de rodovias, só 213,5 mil (12,4\%) são pavimentadas. Desses, 65,6 mil quilômetros são rodovias federais, sendo que apenas 7 mil quilômetros são duplicados. Ferrovias brasileiras são poucas e mal distribuídas com o país possuindo hoje apenas 3,1m/km² é minúscula comparado ao principal competidor da América do Sul (Argentina) ou aos principais países do mundo, sendo um dos meios de transporte mais prejudicados, e isso leva a outros problemas de logística por conta da grande dependência das rodovias (principal meio para distribuição de bens).
+ Seja como for, o Brasil possui ainda um grande espaço para ampliar a sua infraestrutura, o que inclui viabilizar investimentos privados na expansão de seu sistema ferroviário, pois não se pode admitir que um país com 8.516.000 km² disponha de uma malha composta por 13 linhas operando no transporte de cargas com apenas 29.165 km de extensão, conforme dados da Agência Nacional de Transportes Terrestres (ANTT).\\
+ Para atingir nosso objetivo, esta pesquisa será orientada por um conjunto de perguntas norteadoras:\\
+Quais são os principais setores da infraestrutura brasileira e qual é seu estado atual?\\
+Quais são os principais desafios enfrentados pela infraestrutura no Brasil, tanto em termos de qualidade quanto de quantidade?\\
+Como a infraestrutura brasileira impacta a economia do país e a qualidade de vida de sua população?\\
+Quais são as iniciativas governamentais e parcerias público-privadas em andamento para melhorar a infraestrutura?\\
+Quais são as perspectivas futuras para a infraestrutura brasileira e que recomendações podem ser feitas para promover seu desenvolvimento sustentável?\\
+ O problema central desta pesquisa reside na lacuna existente entre as necessidades de infraestrutura do Brasil e sua capacidade de atendê-las eficazmente. Apesar dos avanços significativos nas últimas décadas, a infraestrutura brasileira ainda enfrenta desafios críticos, que incluem questões de manutenção, falta de investimento, burocracia e corrupção. Esses problemas impactam diretamente a economia, o bem-estar social e o meio ambiente, e compreender suas origens e implicações é essencial para abordá-los de forma eficaz. Como a infraestrutura brasileira pode ser aprimorada para atender às crescentes demandas da sociedade e da economia, superando os desafios de falta de investimento, corrupção e burocracia?
+ Com base nas ideias de Raúl Prebisch que teve influência na Comissão Econômica para a América Latina e o Caribe (CEPAL), poderia ser que o desenvolvimento da infraestrutura no Brasil, especialmente no que diz respeito ao transporte e à energia, é crucial para superar a dependência histórica de commodities e promover um desenvolvimento econômico mais equilibrado e inclusivo.
+ A resolução da corrupção excessiva também pode ser considerada uma hipótese, a corrupção e a burocracia intensa, são obstáculos significativos para o desenvolvimento da infraestrutura no Brasil, a redução da corrupção e a simplificação dos processos burocráticos podem liberar recursos e acelerar o desenvolvimento da infraestrutura. Com base nas ideias de Luiz Carlos Bresser-Pereira, uma hipótese poderia ser que a reforma do Estado e a melhoria da gestão pública são fundamentais para superar a ineficiência e a corrupção na execução de projetos de infraestrutura no Brasil, permitindo o uso mais eficaz dos recursos públicos.
+ A promoção da participação do setor privado por meio de parcerias público-privadas (PPPs) e reformas regulatórias eficazes pode ser uma estratégia eficaz para superar os desafios de falta de investimento, corrupção e burocracia na melhoria da infraestrutura brasileira, também poderia ser uma ótima solução baseado no livro "Infraestrutura no Brasil: Desafios e Oportunidades" de  Edison Lobão e Helder Barbalho.
+ O objetivo geral desta pesquisa é realizar uma análise abrangente da infraestrutura no Brasil, abordando seu estado atual, desafios, impactos econômicos e iniciativas de melhoria. A pesquisa busca proporcionar uma visão completa da infraestrutura brasileira e suas implicações para o desenvolvimento do país.\\
+ \\
+Já os objetivos específicos são:\\
+\\
+1. Avaliar o estado atual dos principais setores da infraestrutura no Brasil, como transporte, energia, saneamento e telecomunicações, identificando suas deficiências e sucessos.\\
+\\
+2. Identificar e analisar os principais desafios enfrentados pela infraestrutura brasileira, incluindo problemas de qualidade, escassez de investimentos, questões de corrupção e ineficiência na gestão.\\
+\\
+3. Examinar o impacto da infraestrutura no Brasil em termos de desenvolvimento econômico, competitividade global e qualidade de vida da população.\\
+\\
+4. Investigar as iniciativas em andamento, políticas públicas e parcerias público-privadas que visam melhorar a infraestrutura do país.\\
+\\
+5. Projetar cenários futuros para a infraestrutura no Brasil, levando em consideração tendências globais, avanços tecnológicos e mudanças econômicas.\\
+\\
+6. Propor recomendações concretas para promover o desenvolvimento sustentável da infraestrutura brasileira, visando superar obstáculos como a falta de investimento e questões de corrupção e burocracia.\\
+\\
+\section{Justificativa}
+ A Justificativa para  essa pesquisa além da importância da infraestrutura no cenário nacional, é uma questão que melhora a qualidade de vida de seus habitantes e também tem um impacto econômico muito forte.\\
+
+\section{Referêncial teórico}
+
+Você sabe, a infraestrutura é uma peça-chave quando se trata de crescimento econômico e qualidade de vida em qualquer país. E no Brasil, um país enorme e diversificado, várias mentes brilhantes têm contribuído com suas ideias para enfrentar os desafios que nossa infraestrutura enfrenta.
+
+Vamos começar com Raúl Prebisch, um economista argentino que trouxe à tona a "Teoria da Dependência". Basicamente, ele nos fez entender que países em desenvolvimento, como o Brasil, muitas vezes dependem demais da exportação de matérias-primas. Ele disse que para crescer de maneira saudável, precisamos diversificar nossa economia e investir em infraestrutura. Suas ideias influenciaram políticas de desenvolvimento em toda a América Latina.
+
+Luiz Carlos Bresser Pereira, um economista e político brasileiro, destaca a importância de uma gestão pública eficiente e parcerias com o setor privado. Ele fala sobre como a ineficiência e a corrupção podem atrapalhar os projetos de infraestrutura, mas também acredita que parcerias público-privadas bem planejadas podem ser uma solução. Ele teve um papel importante no governo brasileiro, promovendo reformas administrativas e econômicas.
+
+Agora, temos Edison Lobão e Helder Barbalho, políticos brasileiros e autores do livro "Infraestrutura no Brasil: Desafios e Oportunidades". Eles enfatizam a necessidade de atrair investimentos privados e fazer parcerias público-privadas para melhorar nossa infraestrutura. Ambos têm desempenhado papéis influentes na política e economia do Brasil.
+
+Celso Furtado, um economista brasileiro muito respeitado, diz que a infraestrutura é uma peça-chave no desenvolvimento econômico e social. Ele acredita que projetos como a construção de estradas e a geração de energia são fundamentais para nosso crescimento econômico e para melhorar a qualidade de vida.
+
+Por fim, temos Edmar de Almeida, um especialista em economia de energia. Ele fala sobre questões relacionadas à energia no Brasil, como petróleo, eletricidade e gás. Ele nos lembra da importância de um setor de energia eficiente e sustentável para impulsionar nosso crescimento econômico.
+
+E claro, não podemos esquecer do livro Infraestrutura Energética no Brasil de Joaquim Rocha dos Santos, Humberto E. Garcia Lopes e Rodrigo Limp. Eles mergulham fundo na infraestrutura energética do Brasil, discutindo coisas como nossa matriz energética, produção, distribuição e políticas energéticas. Eles também oferecem algumas estratégias interessantes para melhorar nossa infraestrutura energética.
+
+Então, todas essas perspectivas nos ajudam a entender como a infraestrutura no Brasil é importante, e como podemos enfrentar os desafios, como a falta de investimento, corrupção e burocracia. Elas nos lembram da importância da colaboração entre o setor público e privado, de reformas eficazes e de uma visão ampla do desenvolvimento que coloca a infraestrutura no centro do crescimento econômico sustentável e da melhoria na qualidade de vida.
+\section{Metodologia}
+desenvolvimento dessa pesquisa científica será utilizado os seguintes passos:\\
+1. Investigação teórica do problema proposto, por meio de leitura e revisão de bibliografias diversas que discorrem sobre o tema, como livros, artigos, dissertações, entre outros. Utilizando sempre fontes confiáveis.\\
+2. Entrevistar profissionais atuantes na construção civil para coleta de dados sobre o uso de tecnologias de informação nas suas respectivas funções.\\
+3. Analisar e realizar o tratamento desses dados.\\
+4. Elaborar a pesquisa científica, sempre retomando aos passos anteriores quando for necessário.\\
+
+\section {Refêrencias}
+Reformas econômicas em democracias novas: uma proposta social-democrata de Luiz Carlos Bresser-Pereira\\
+Prebish por Dosman\\
+THE ECONOMIC DEVELOPMENT OF LATIN AMERICA: and its problems - Comissão Economica para a America Latina (CEPAL)\\
+Infraestrutura no Brasil: Desafios e Oportunidades -  Edison Lobão e Helder Barbalho\\
+Energia no Brasil: Para Quê? - Edmar de Almeida e José Rosenblatt\\
+"Desenvolvimento e Subdesenvolvimento" - Celso Furtato
+Acesso dia 04/10/2023 às 14h30 \\
+https://brasilescola.uol.com.br/brasil/transporte-ferroviario-brasileiro.htm#:~:text=O\%20pa\%C3\%ADs\%20possui\%20hoje\%2030.000,52\%25\%20localizadas\%20na\%20Regi\%C3\%A3o\%20Sudeste.\\
+Acesso dia 04/10/2023 às 14:47\\
+https://agenciabrasil.ebc.com.br/geral/noticia/2022-11/pesquisa-da-cnt-aponta-continua-deterioracao-das-rodovias-\\
+brasileiras#:~:text=Do\%201\%2C72\%20milh\%C3\%A3o\%20de,7\%20mil\%20quil\%C3\%B4metros\%20s\%C3\%A3o\%20duplicadas.
+Acesso dia 04/10-2023 às 15h10\\
+https://www.guiamaritimo.com.br/especiais/portos/infraestrutura-portuaria-investir-e-fundamental\\
+
+\end{document}
